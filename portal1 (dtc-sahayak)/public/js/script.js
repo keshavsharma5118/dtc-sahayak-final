@@ -28,11 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (response.ok) {
                     const data = await response.json();
-                   
-                  
-                    // Redirect to dashboard or another page
-                    window.location.href = "/api/v1/users/man/dashboard";
-                    
+                    // Redirect to scheduler dashboard
+                    window.location.href = "http://localhost:8000/api/v1/users/sch/dashboard";
                 } else {
                     const errorData = await response.json();
                     console.error("Error data:", errorData);
