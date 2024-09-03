@@ -1,0 +1,7 @@
+password - bw4HvtneA1fKHuDc
+username - pratikkumarsah07
+bw4HvtneA1fKHuD
+mongodb+srv://pratikkumarsah07:bw4HvtneA1fKHuDc@cluster0.rspsp.mongodb.net/
+mongodb+srv://pratikkumarsah07:<password>@cluster0.rspsp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+// NPM CREATE VITE 

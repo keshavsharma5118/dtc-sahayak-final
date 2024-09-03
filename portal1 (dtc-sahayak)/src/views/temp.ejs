@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/sch.util.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="/img/dtc.png" alt="DTC Emblem">
+                <h1 id="dtc">DTC Sahayak</h1>
+            </div>
+            <div class="government-logos">
+                <img src="/img/emblem.png" alt="Indian Government">
+                <img src="/img/india.png" alt="Indian Flag">
+                <img src="/img/Azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+            <div class="profile-info">
+                <a href="/views/Scheduler-profile.html"><span class="profile-icon"><img src="/img/user.png" alt="user" height="40px" ></a></span>
+                <span class="schedular-id">Schedular #ID</span>
+            </div>
+            <div class="logout-time">
+                <span id="datetime"></span>
+                <span class="material-icons logout-icon">logout</span>
+
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="/views/scheduler1.dashboard.html">Dashboard</a></li>
+                    <li><a href="/views/scheduler2.linked.html">Linked/Unlinked</a></li>
+                    <li><a href="/views/scheduler3.routestatus.html">Route Status</a></li>
+                    <li><a href="/views/scheduler4.scheduleduty.html">Schedule Duty</a></li>
+                    <li><a href="/views/scheduler5.scheduledtrips.html">Scheduled Trips</a></li>
+                    <li><a href="/views/scheduler6.crew.html" >Crew Availability</a></li>
+                </ul>
+            </nav>
+
+        
+        </div>
+    </div>
+    <script src="/js/datetime.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/sch.util.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="/img/dtc.png" alt="DTC Emblem">
+                <h1 id="dtc">DTC Sahayak</h1>
+            </div>
+            <div class="government-logos">
+                <img src="/img/emblem.png" alt="Indian Government">
+                <img src="/img/india.png" alt="Indian Flag">
+                <img src="/img/azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+
+        </header>
+
+        <div class="main-content">
+
+            <main>
+                <div class="login-box">
+                    <img src="/img/whiteemblem.png" alt="Indian Emblem" class="emblem-main">
+                    <h2>Delhi Transport Corporation</h2>
+
+                    <form>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Password</label>
+                        <!-- <div class="password-container">
+                            <input type="password" id="password" name="password" required>
+                            <span class="show-password"></span>
+                        </div> -->
+                        <div class="password-container">
+                            <input type="password" id="password" name="password" required>
+                            <span class="material-icons show-password">visibility</span>
+                        </div>
+
+
+                        <a href="#"  onclick="forgotPasswordAlert()" class="forgot-password">Forget Password?</a>
+
+                        <button type="submit">Log in</button>
+                    </form>
+                </div>
+            </main>
+
+        </div>
+    </div>
+    <script src="/js/hide.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>             

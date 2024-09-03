@@ -1,0 +1,109 @@
+/* Profile Details Section */
+.profile-details {
+    background-color: #3b66ef; /* Consistent blue color for the background */
+    padding: 30px; /* Increased padding for more spacing */
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.profile-details h2 {
+    font-size: 26px; /* Slightly increased font size for better readability */
+    margin-bottom: 25px;
+    color: white;
+    border-bottom: 2px solid #fff; /* Underline for distinction */
+    padding-bottom: 10px;
+}
+
+/* Filters Section */
+.filters {
+    display: flex; /* Flexbox for layout */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 12px; /* Increased padding */
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px; /* Margin between selects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.filters select:hover {
+    background-color: #e3e6f0; /* Light background on hover */
+}
+
+.filters button {
+    padding: 12px 24px; /* More padding for larger button */
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    margin-left: 10px; /* Margin for separation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.filters button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #537BE5; /* Consistent background */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Table shadow for depth */
+}
+
+.table th,
+.table td {
+    padding: 15px; /* Increased padding for better spacing */
+    text-align: center;
+    border: 1px solid #dee2e6;
+    font-size: 15px; /* Increased font size */
+}
+
+.table th {
+    background-color: #7AA3F0; /* Light blue header */
+    font-weight: bold; /* Bold text for headers */
+}
+
+.table tr:hover {
+    background-color: #4f82e0; /* Highlight row on hover */
+    cursor: pointer; /* Indicate clickable rows */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #5f8ee6; /* Alternate row background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-details {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .filters {
+        flex-direction: column; /* Stack filters vertically */
+        gap: 10px; /* Space between filters */
+    }
+
+    .filters select,
+    .filters button {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .table th,
+    .table td {
+        font-size: 14px; /* Slightly smaller text */
+        padding: 10px; /* Reduced padding */
+    }
+}

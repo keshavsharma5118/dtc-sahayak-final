@@ -1,0 +1,51 @@
+
+
+.profile-details {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the main content */
+}
+
+.running-status {
+    margin-bottom: 20px;
+    text-align: left; /* Aligns the button to the left */
+}
+
+.status-button {
+    background-color: #1976d2; /* Blue background for the button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.status-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.table-header {
+    display: contents;
+}
+
+.header-item {
+    background-color: #ba68c8; /* Purple background for table headers */
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.table-row {
+    display: contents;
+}
+
+.row-item {
+    background-color: #e1bee7; /* Light purple for table rows */
+    height: 50px;
+    border-radius: 10px;
+}

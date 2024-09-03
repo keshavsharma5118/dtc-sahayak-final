@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link status</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/sch.util.css">
+    <link rel="stylesheet" href="/css/sch.linked.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="/img/dtc.png" alt="DTC Emblem">
+                <h1 id="dtc">DTC Sahayak</h1>
+            </div>
+            <div class="government-logos">
+                <img src="/img/emblem.png" alt="Indian Government">
+                <img src="/img/india.png" alt="Indian Flag">
+                <img src="/img/Azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+            <div class="profile-info">
+                <a href="/api/v1/users/sch/profile"><span class="profile-icon"><img src="/img/user.png" alt="user" height="40px" ></a></span>
+                <span class="schedular-id">Schedular #ID</span>
+            </div>
+            <div class="logout-time">
+                <span id="datetime"></span>
+                <span class="material-icons logout-icon">logout</span>
+
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="/api/v1/users/sch/dashboard">Dashboard</a></li>
+                    <li><a href="/api/v1/users/sch/linked" class="active">Linked/Unlinked</a></li>
+                    <li><a href="/api/v1/users/sch/routestatus">Route Status</a></li>
+                    <li><a href="/api/v1/users/sch/scheduleduty">Schedule Duty</a></li>
+                    <li><a href="/api/v1/users/sch/scheduledtrips">Scheduled Trips</a></li>
+                    <li><a href="/api/v1/users/sch/crew">Crew Availability</a></li>
+                </ul>
+            </nav>
+
+        
+
+            <section class="profile-details flex-grow-1 p-3">
+                <h2>Home/Linked/Unlinked</h2>
+            
+                <div class="filters d-flex mb-3">
+                    <select class="form-control mr-2">
+                        <option>Calendar</option>
+                    </select>
+                    <select class="form-control mr-2">
+                        <option>Route</option>
+                    </select>
+                    <select class="form-control mr-2">
+                        <option>Shift</option>
+                    </select>
+                    <button class="btn btn-success">Search</button>
+                </div>
+            
+                <table class="table table-hover table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>EID</th>
+                            <th>BUS ID</th>
+                            <th>TIME</th>
+                            <th>LINK DUTY TO</th>
+                            <th>UNLINK DUTY BY</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows would be dynamically generated -->
+                        <tr>
+                            <td colspan="6">No data available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </div>
+    <script src="/js/datetime.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

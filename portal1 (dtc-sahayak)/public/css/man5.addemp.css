@@ -1,0 +1,70 @@
+.middle-content {
+    padding: 20px;
+    margin-left: 20px; /* Adjust based on sidebar width */
+    margin-top: 20px;
+}
+
+.section-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start; /* Align the button to the left */
+}
+
+.section-button {
+    background-color: #4CAF50; /* Green background for active button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form rows */
+    margin-top: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    gap: 20px; /* Small gap between label and value */
+}
+
+.form-label, .form-value {
+    background-color: #0056b3; /* Blue background for labels and values */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-label {
+    min-width: 120px; /* Fixed width for labels */
+    text-align: left; /* Align text to the left */
+}
+
+.form-value {
+    flex-grow: 1; /* Allows the value to grow and take up available space */
+    text-align: left; /* Align text to the left */
+}
+
+.submit-button-container {
+    margin-top: 20px;
+    text-align: center; /* Center-align the submit button */
+}
+
+.submit-button {
+    background-color: #008000; /* Green background for submit button */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}

@@ -1,0 +1,81 @@
+.middle-content {
+    padding: 20px;
+    margin-left: 20px; /* Adjust based on sidebar width */
+    margin-top: 20px;
+}
+
+.section-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start; /* Align the button to the left */
+}
+
+.section-button {
+    background-color: #4CAF50; /* Green background for active button */
+    color: rgb(0, 0, 0);
+    padding: 20px 40px; /* Increase padding for a larger button */
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: auto; /* Adjust width for left alignment */
+    margin: 0; /* Remove default margins */
+    font-size: 18px; /* Increase font size for visibility */
+}
+
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Increase gap between buttons */
+    margin-bottom: 20px;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.dropdown-button {
+    background-color: #FFAA33; /* Orange color for dropdown buttons */
+    color: black;
+    padding: 15px 35px; /* Increase padding for larger button size */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px; /* Increase font size for better visibility */
+    width: 180px; /* Set button width for consistency */
+}
+
+.search-button {
+    background-color: #4CAF50; /* Green color for search button */
+    color: white;
+    padding: 15px 35px; /* Increase padding for a larger button */
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Increase font size for better visibility */
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.schedule-table th {
+    background-color: #0056b3; /* Dark blue color */
+    color: white;
+}
+
+.schedule-table td {
+    height: 40px;
+}

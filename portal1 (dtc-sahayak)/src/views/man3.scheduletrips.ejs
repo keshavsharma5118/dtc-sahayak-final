@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTC Sahayak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/man.util.css">
+    <link rel="stylesheet" href="/css/man3.scheduletrips.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="/img/dtc.png" alt="DTC Emblem">
+                <h1 id="dtc">DTC Sahayak</h1>
+            </div>
+            <div class="government-logos">
+                <img src="/img/emblem.png" alt="Indian Government">
+                <img src="/img/india.png" alt="Indian Flag">
+                <img src="/img/azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+            <div class="profile-info">
+                <a href="/api/v1/users/man/profile"> <span class="profile-icon"><img src="/img/user1.png" alt="user" height="40px" ></span></a>
+                <span class="schedular-id">Manager #ID</span>
+            </div>
+            <div class="logout-time">
+                <span id="datetime"></span>
+                <span class="material-icons logout-icon">logout</span>
+
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="/api/v1/users/man/dashboard" class="active" >Dashboard</a></li>
+                    <li><a href="/api/v1/users/man/available">Availability</a></li>
+                    <li><a href="/api/v1/users/man/scheduletrips" class="active">Scheduled Trips</a></li>
+                    <li><a href="/api/v1/users/man/linked">Linked/Unlinked</a></li>
+                    <li><a href="/api/v1/users/man/addemp">Add Employee</a></li>
+                    <li><a href="/api/v1/users/man/employeereq">Employee Request</a></li>
+                </ul>
+            </nav>
+
+
+
+            
+        <div class="profile-details">
+            <div class="middle-content">
+                <div class="section-header">
+                    <button class="section-button">Scheduled Trips</button>
+                </div>
+                <div class="filter-controls">
+                    <div class="dropdown">
+                        <button class="dropdown-button">Calendar <i class="material-icons">arrow_drop_down</i></button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-button">Route <i class="material-icons">arrow_drop_down</i></button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-button">Shift <i class="material-icons">arrow_drop_down</i></button>
+                    </div>
+                    <button class="search-button">Search</button>
+                </div>
+                <div class="table-container">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Route</th>
+                                <th>Bus ID</th>
+                                <th>Origin</th>
+                                <th>Destination</th>
+                                <th>Driver</th>
+                                <th>Conductor</th>
+                                <th>Edit</th>
+                                <th>Submit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Add rows dynamically or with sample data -->
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!-- Repeat rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            
+    </div>
+    <script src="/js/datetime.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

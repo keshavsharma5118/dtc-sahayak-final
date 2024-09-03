@@ -1,0 +1,66 @@
+/* Content container */
+.content {
+    padding: 20px;
+}
+
+/* Section title */
+.section-title {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Employee table styling */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.employee-table th, .employee-table td {
+    padding: 15px;
+    border: 1px solid #0d05ff;
+}
+
+/* Make the font inside table cells black */
+.employee-table td {
+    color: black;
+}
+
+.employee-table thead {
+    background-color: #e0e7ff;
+    color: black;
+}
+
+.employee-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Accept button styling */
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Reject button styling */
+.reject-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accept-btn:hover, .reject-btn:hover {
+    opacity: 0.8;
+}

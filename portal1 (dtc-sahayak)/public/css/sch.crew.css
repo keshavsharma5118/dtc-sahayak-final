@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7d358;
+    padding: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #1e40a6;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+}
+
+.navbar button {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.navbar button.active {
+    background-color: #28a745;
+    color: white;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #6ca0dc;
+}
+
+.filter-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-section select, .filter-section button {
+    padding: 10px;
+}
+
+.tables {
+    display: flex;
+    gap: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e40a6;
+    color: white;
+}
+
+.footer {
+    text-align: right;
+    padding: 10px;
+    background-color: #f7d358;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

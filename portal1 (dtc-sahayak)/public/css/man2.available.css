@@ -1,0 +1,59 @@
+
+/* Availability Header and Button */
+.availability-header {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.availability-button {
+    background-color: #66bb6a; /* Green color */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increased padding for a bigger button */
+    border-radius: 15px; /* Slightly more rounded corners */
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card Styles */
+.card {
+    background-color: #00cfeb; /* Light blue color */
+    border-radius: 15px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px; /* Added margin to create space between the cards */
+}
+
+.card-icon {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+.dropdown-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #000; /* Black color for the dropdown icon */
+    font-size: 18px;
+}

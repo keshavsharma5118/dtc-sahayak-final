@@ -1,0 +1,193 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* White Header */
+.header-white {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
+}
+#dtc{
+    font-size:35px;
+}
+
+.header-white .logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-white .logo img {
+    height: 110px;
+    margin-right: 10px;
+    
+}
+.logout-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(28, 24, 24); /* Set the logout icon color to red */
+}
+
+.header-white h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.government-logos img {
+    height: 70px;
+    margin-left: 30px;
+}
+ 
+/* Yellow Sub-Header */
+.header-yellow {
+    background-color: #03dce3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.profile-info .profile-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.logout-time {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.logout-time span {
+    margin-right: 15px;
+}
+
+.logout-icon {
+    font-size: 30px;
+}
+
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    background-color: #3b66ef;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #0047ba;
+    width: 250px;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    background-color: rgb(205, 219, 13);
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2E77BB;
+    color: white;
+}
+
+/* Profile Details Section */
+.profile-details {
+    flex-grow: 1;
+    background-color: #edeff4;
+    padding: 20px;
+    color: white;
+}
+
+.profile-details h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-white h1 {
+        font-size: 24px;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .profile-details h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-white h1 {
+        font-size: 20px;
+    }
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .sidebar ul li a {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .profile-details h3 {
+        font-size: 14px;
+    }
+}

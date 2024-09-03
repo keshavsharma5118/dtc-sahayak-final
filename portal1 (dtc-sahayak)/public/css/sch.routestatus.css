@@ -1,0 +1,64 @@
+/* Profile Details Section */
+.profile-details {
+    flex-grow: 1;
+    background-color: #3b66ef;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /* Increased gap for better spacing */
+}
+
+.depot-selector,
+.route-details {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #000;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.depot-selector {
+    max-width: 300px; /* Limit width of depot selector */
+}
+
+.depot-selector h3,
+.route-details h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.depot-selector select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #0044cc;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background-color: #0044cc;
+    color: #fff;
+}
+
+.routes-found button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.routes-found button:hover {
+    background-color: #f09300;
+}
+
+.route-details iframe {
+    border-radius: 8px;
+}

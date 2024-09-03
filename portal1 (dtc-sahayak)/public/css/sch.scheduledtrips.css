@@ -1,0 +1,141 @@
+/* Scheduled Trips Section Styles */
+.scheduled.trips-details {
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for contrast */
+    color: black; /* Text color for readability */
+    border-radius: 10px; /* Rounded corners for a soft look */
+    margin: 20px; /* Margin to separate from other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header for Scheduled Trips */
+.scheduled.trips-details h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333; /* Darker header text color */
+    font-weight: bold;
+}
+
+/* Search Container Styles */
+.search-container {
+    background-color: #FF9800; /* Orange background */
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Center items evenly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.search-container select {
+    width: 20%; /* Control the width of dropdowns */
+    margin-right: 10px; /* Add space between elements */
+    padding: 5px;
+    border-radius: 5px; /* Rounded corners for dropdowns */
+}
+
+.search-container .search-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container .search-btn:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Table Styles */
+.schedule-table {
+    width: 100%;
+    margin-top: 20px;
+    color: #333333; /* Darker table text color */
+    background-color: #f8f8f8; /* Light gray background */
+    border-collapse: collapse; /* Remove spacing between cells */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Hide overflow from rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.schedule-table thead {
+    background-color: #0d2ed1; /* Header background */
+    color: white; /* Header text color */
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Border between cells */
+    vertical-align: middle; /* Center-align text vertically */
+}
+
+.schedule-table th {
+    font-weight: bold; /* Header text bold */
+}
+
+.schedule-table tbody tr {
+    background-color: #fff; /* White background for rows */
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
+}
+
+/* Button Styles */
+.schedule-table .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.schedule-table .btn:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Edit and Submit Button Styles */
+.schedule-table .btn-edit {
+    background-color: #FF9800;
+    margin-right: 5px;
+}
+
+.schedule-table .btn-submit {
+    background-color: #4CAF50;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .search-container select {
+        width: 30%; /* Adjust width for smaller screens */
+    }
+    .search-container .search-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .schedule-table th, .schedule-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container select {
+        width: 40%; /* Further adjust width */
+    }
+    .schedule-table th, .schedule-table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+}

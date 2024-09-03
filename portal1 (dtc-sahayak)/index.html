@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration and Login</title>
+</head>
+<body>
+    <!-- Registration Form -->
+    <h2>Register</h2>
+    <form id="registerForm">
+        <input type="text" id="registerFullName" placeholder="Full Name" required />
+        <input type="email" id="registerEmail" placeholder="Email" required />
+        <input type="text" id="registerUsername" placeholder="Username" required />
+        <input type="password" id="registerPassword" placeholder="Password" required />
+        <input type="file" id="registerAvatar" accept="image/*" />
+        <input type="file" id="registerCoverImage" accept="image/*" />
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Login Form -->
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="loginUsernameOrEmail" placeholder="Username or Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn" style="display:none;">Logout</button>
+
+    <script>
+        const registerForm = document.getElementById('registerForm');
+        const loginForm = document.getElementById('loginForm');
+        const logoutBtn = document.getElementById('logoutBtn');
+
+        // Helper function to parse JSON response safely
+        const safeJsonParse = async (response) => {
+            try {
+                return await response.json();
+            } catch (error) {
+                console.error("Failed to parse JSON response:", error);
+                return null;
+            }
+        };
+
+        // Register User
+        registerForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData();
+            formData.append('FullName', document.getElementById('registerFullName').value);
+            formData.append('email', document.getElementById('registerEmail').value);
+            formData.append('username', document.getElementById('registerUsername').value);
+            formData.append('password', document.getElementById('registerPassword').value);
+            formData.append('avatar', document.getElementById('registerAvatar').files[0]);
+            if (document.getElementById('registerCoverImage').files[0]) {
+                formData.append('coverImage', document.getElementById('registerCoverImage').files[0]);
+            }
+
+            try {
+                const res = await fetch('/api/v1/users/register', {
+                    method: 'POST',
+                    body: formData,
+                    credentials: 'include',
+                });
+
+                const data = await safeJsonParse(res);
+                if (res.ok) {
+                    alert(data.message || 'User registered successfully');
+                } else {
+                    throw new Error(data?.message || 'Error registering user');
+                }
+            } catch (err) {
+                console.error(err);
+                alert(err.message);
+            }
+        });
+
+        // Login User
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const usernameOrEmail = document.getElementById('loginUsernameOrEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            try {
+                const res = await fetch('/api/v1/users/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    credentials: 'include',
+                    body: JSON.stringify({
+                        username: usernameOrEmail.includes('@') ? undefined : usernameOrEmail,
+                        email: usernameOrEmail.includes('@') ? usernameOrEmail : undefined,
+                        password
+                    })
+                });
+
+                const data = await safeJsonParse(res);
+                if (res.ok) {
+                    alert(data.message || 'User logged in successfully');
+                    logoutBtn.style.display = 'block';
+                } else {
+                    throw new Error(data?.message || 'Error logging in user');
+                }
+            } catch (err) {
+                console.error(err);
+                alert(err.message);
+            }
+        });
+
+        // Logout User
+        logoutBtn.addEventListener('click', async () => {
+            try {
+                const res = await fetch('/api/v1/users/logout', {
+                    method: 'POST',
+                    credentials: 'include'
+                });
+
+                const data = await safeJsonParse(res);
+                if (res.ok) {
+                    alert(data.message || 'User logged out successfully');
+                    logoutBtn.style.display = 'none';
+                } else {
+                    throw new Error(data?.message || 'Error logging out user');
+                }
+            } catch (err) {
+                console.error(err);
+                alert(err.message);
+            }
+        });
+    </script>
+</body>
+</html>

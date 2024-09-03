@@ -1,0 +1,74 @@
+/* Schedule Form Section */
+.schedule-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #3b66ef; /* Blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.schedule-form select,
+.schedule-form input[type="date"],
+.schedule-form input[type="time"] {
+    width: calc(30% - 10px); /* Improved width for better alignment */
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #0044cc;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.schedule-form select:focus,
+.schedule-form input[type="date"]:focus,
+.schedule-form input[type="time"]:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.schedule-duty h3 {
+    font-size: 22px; /* Larger font for visibility */
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff; /* White text for contrast */
+    background-color: #ffa500; /* Orange background for the breadcrumb */
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.submit-btn {
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    align-self: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+@media (max-width: 768px) {
+    .schedule-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .schedule-form select,
+    .schedule-form input[type="date"],
+    .schedule-form input[type="time"] {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
