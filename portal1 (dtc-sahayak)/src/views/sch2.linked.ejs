@@ -30,14 +30,15 @@
         <!-- Yellow Sub-Header -->
         <header class="header-yellow">
             <div class="profile-info">
-                <a href="/api/v1/users/sch/profile"><span class="profile-icon"><img src="/img/user.png" alt="user" height="40px" ></a></span>
+                <a href="/api/v1/users/sch/profile"><span class="profile-icon"><img src="/img/user.png" alt="user"
+                            height="40px"></a></span>
                 <span class="schedular-id">Schedular #ID</span>
             </div>
             <div class="logout-time">
                 <span id="datetime"></span>
                 <span>
                     <!-- Anchor tag for logout with the icon -->
-                  <a href="/api/v1/users/login" class="logout-link">
+                    <a href="/api/v1/users/login" class="logout-link">
                         <i class="material-icons logout-icon">logout</i> <!-- Material icon for logout -->
                     </a> <!-- Material icon for logout -->
                     </a>
@@ -59,11 +60,11 @@
                 </ul>
             </nav>
 
-        
+
 
             <section class="profile-details flex-grow-1 p-3">
                 <h2>Home/Linked/Unlinked</h2>
-            
+
                 <div class="filters d-flex mb-3">
                     <select class="form-control mr-2">
                         <option>Calendar</option>
@@ -86,11 +87,18 @@
                         <option value="871">871</option>
                     </select>
                     <select class="form-control mr-2">
+
+
                         <option>Shift</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <option value="late-night">Late Night</option>
+
                     </select>
                     <button class="btn btn-success">Search</button>
                 </div>
-            
+
                 <table class="table table-hover table-bordered text-center">
                     <thead class="thead-light">
                         <tr>
@@ -118,21 +126,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
